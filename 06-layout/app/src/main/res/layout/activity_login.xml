@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        style="@style/img_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_chrome" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/container_form"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/bg_container_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        style="@style/campos"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:drawableRight="@drawable/ic_email"
+        android:textColorHint="@color/white"
+        android:background="@drawable/bg_campo"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        style="@style/campos"
+        android:background="@drawable/bg_campo"
+        android:ems="10"
+        android:hint="Senha"
+        android:drawableRight="@drawable/ic_pwd"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/campos"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/bg_btn"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
