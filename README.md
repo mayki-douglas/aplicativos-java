@@ -6,3 +6,4 @@ Projetos de App para android usando Java
 * 3: Funcionario: Cadastro de funcionário para retornar sua média salarial em um Alert Dialog.
 * 4: Aluno: Cadastro de aluno retornando sua média de nota e sua situação. Inserindo imagem via drawable e retornando resultados em alert dialog.
 * 5: Nadador: App que retorna a classificação de um nadador de acordo com sua idade.
+* 6: Layout: Primeiro projeto com tela de login, com 2 campos de email e senha estilizados, criando arquivos no xml e imagens diretas da internet.
